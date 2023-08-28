@@ -1,0 +1,1 @@
+{"name":"Local: H - Happy Morse Code","url":"e:\\Algorithm\\voj\\ZZJC-train-7\\H - Happy Morse Code.cpp","tests":[{"id":1680332304734,"input":"1\n4 4\na 01\nb 10\nc 01\nd 0110\n0110","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\voj\\ZZJC-train-7\\H - Happy Morse Code.cpp","group":"local","local":true}

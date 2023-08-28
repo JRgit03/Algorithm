@@ -1,0 +1,1 @@
+{"name":"Local: I","url":"e:\\Algorithm\\voj\\ZZJC-train-9\\I.cpp","tests":[{"id":1681217464199,"input":"7 3\npotatop\n1 3\n3 5\n1 6","output":"Putata\nBudada\nBudada"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\voj\\ZZJC-train-9\\I.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: F","url":"e:\\Algorithm\\voj\\ZZJCACM-Midterm\\F.cpp","tests":[{"id":1682177814808,"input":"6 5 3\n1 2\n1 5\n3 4\n5 2\n1 3\n1 4\n2 3\n5 6","output":"Yes\nYes\nNo"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\voj\\ZZJCACM-Midterm\\F.cpp","group":"local","local":true}

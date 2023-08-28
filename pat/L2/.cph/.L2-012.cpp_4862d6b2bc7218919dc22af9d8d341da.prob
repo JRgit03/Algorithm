@@ -1,0 +1,1 @@
+{"name":"Local: L2-012","url":"e:\\Algorithm\\pat\\L2\\L2-012.cpp","tests":[{"id":1680154959889,"input":"5 4\n46 23 26 24 10\n24 is the root\n26 and 23 are siblings\n46 is the parent of 23\n23 is a child of 10","output":"F\nT\nF\nT"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\pat\\L2\\L2-012.cpp","group":"local","local":true}

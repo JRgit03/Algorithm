@@ -1,0 +1,1 @@
+{"name":"Local: D","url":"e:\\Algorithm\\voj\\ZZJCACM-Midterm\\D.cpp","tests":[{"id":1682176905905,"input":"5 7\n1 2\n1 3\n2 4\n3 4\n2 3\n4 5\n4 5","output":"1\n1\n1\n2\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\voj\\ZZJCACM-Midterm\\D.cpp","group":"local","local":true}

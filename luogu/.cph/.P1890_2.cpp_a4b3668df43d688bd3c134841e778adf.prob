@@ -1,0 +1,1 @@
+{"name":"Local: P1890_2","url":"e:\\Algorithm\\luogu\\P1890_2.cpp","tests":[{"id":1680521494688,"input":"5 3\n4 12 3 6 7\n1 3\n2 3\n5 5","output":"1\n3\n7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\luogu\\P1890_2.cpp","group":"local","local":true}

@@ -1,0 +1,6 @@
+{
+    "code-runner.executorMap":{
+        "c" :"cd $dir && gcc $fileName -o E:\\Algorithm\\.build$fileNameWithoutExt && E:\\Algorithm\\.build$fileNameWithoutExt"
+    }
+}
+

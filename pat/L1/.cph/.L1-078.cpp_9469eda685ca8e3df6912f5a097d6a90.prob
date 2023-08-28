@@ -1,0 +1,1 @@
+{"name":"Local: L1-078","url":"e:\\Algorithm\\pat\\L1\\L1-078.cpp","tests":[{"id":1681893870028,"input":"5 1\nL1-1 is a qiandao problem.\nL1-2 is so...easy.\nL1-3 is Easy.\nL1-4 is qianDao.\nWow, such L1-5, so easy.","output":"L1-4 is qianDao."}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\pat\\L1\\L1-078.cpp","group":"local","local":true}

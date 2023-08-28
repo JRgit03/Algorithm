@@ -1,0 +1,1 @@
+{"name":"Local: L2_041","url":"e:\\Algorithm\\pat\\L2\\L2_041.cpp","tests":[{"id":1680587067014,"input":"8 3 4\n20 25 15 18 20 18 8 5\n","output":"20 15\n20 18 18 8\n25 5\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\pat\\L2\\L2_041.cpp","group":"local","local":true}

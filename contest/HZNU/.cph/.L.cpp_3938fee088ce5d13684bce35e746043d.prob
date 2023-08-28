@@ -1,0 +1,1 @@
+{"name":"Local: L","url":"e:\\Algorithm\\contest\\HZNU\\L.cpp","tests":[{"id":1685161258598,"input":"5 3\n1 2 4 4 2\n2 2 1 2 4","output":"4.00"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\contest\\HZNU\\L.cpp","group":"local","local":true}

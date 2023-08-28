@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"e:\\Algorithm\\voj\\ZZJC-train-7\\test.cpp","tests":[{"id":1680325238240,"input":"5\n2\n3\n5\n7\n999983","output":"1.0000000000\n1.5000000000\n2.0000000000\n2.1666666667\n15.9864347558"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\voj\\ZZJC-train-7\\test.cpp","group":"local","local":true}

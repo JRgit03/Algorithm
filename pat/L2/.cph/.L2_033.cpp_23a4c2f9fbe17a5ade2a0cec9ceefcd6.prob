@@ -1,0 +1,1 @@
+{"name":"Local: L2_033","url":"e:\\Algorithm\\pat\\L2\\L2_033.cpp","tests":[{"id":1680228906994,"input":"5\n40 5 8 3 2\n/ * - +\n","output":"2"},{"id":1680228927046,"input":"5\n2 5 8 4 4\n* / - +","output":"ERROR: 5/0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\pat\\L2\\L2_033.cpp","group":"local","local":true}

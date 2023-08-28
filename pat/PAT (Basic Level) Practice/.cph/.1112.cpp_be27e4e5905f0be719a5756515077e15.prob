@@ -1,0 +1,1 @@
+{"name":"Local: 1112","url":"e:\\Algorithm\\pat\\PAT (Basic Level) Practice\\1112.cpp","tests":[{"id":1683354961656,"input":"4\nzju007 39 10\npku2019 9 332\npat2018 95 79\nqdu106 19 38","output":"pku2019 332\npat2018 7505"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\pat\\PAT (Basic Level) Practice\\1112.cpp","group":"local","local":true}

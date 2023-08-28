@@ -1,0 +1,1 @@
+{"name":"Local: M","url":"e:\\Algorithm\\nowcoder\\nowcoder-schoolContest\\CQJTU\\M.cpp","tests":[{"id":1681022689144,"input":"3\n1 2 abc\n2 3 ad\n1 3 b\n3 1 de\n0 0\n1 3\n2 1\n3 2\n0 0","output":"ab\nd\n-"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\nowcoder\\nowcoder-schoolContest\\CQJTU\\M.cpp","group":"local","local":true}

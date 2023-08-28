@@ -1,0 +1,1 @@
+{"name":"Local: L1-077","url":"e:\\Algorithm\\pat\\L1\\L1-077.cpp","tests":[{"id":1681895223853,"input":"80 75 60 50 20 20 20 20 55 62 66 51 42 33 47 58 67 52 41 20 35 49 50 63\n17\n7\n3\n15\n-1\n","output":"52 Yes\n20 No\n50 No\n58 Yes\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\pat\\L1\\L1-077.cpp","group":"local","local":true}

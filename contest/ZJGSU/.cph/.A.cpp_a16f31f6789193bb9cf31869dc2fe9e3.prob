@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"e:\\Algorithm\\contest\\ZJGSU\\A.cpp","tests":[{"id":1684555429475,"input":"5\n6 4 2 1 5","output":"3"},{"id":1684555742200,"input":"2\n2 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\contest\\ZJGSU\\A.cpp","group":"local","local":true}

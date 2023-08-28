@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"e:\\Algorithm\\voj\\ZZJC20230503\\A.cpp","tests":[{"id":1683112603627,"input":"11\n1 2 3\n3 2 1\n2 9 -7\n3 4 7\n1 1 2\n1 1 0\n3 3 6\n9 9 18\n9 9 0\n1 9 -8\n1 9 10","output":"+\n-\n-\n+\n+\n-\n+\n+\n-\n-\n+\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\voj\\ZZJC20230503\\A.cpp","group":"local","local":true}

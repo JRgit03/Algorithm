@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"e:\\Algorithm\\codeforce\\cf#878\\A.cpp","tests":[{"id":1686062094066,"input":"3\n8\nabacabac\n5\nqzxcq\n20\nccooddeeffoorrcceess\n","output":"ac\nq\ncodeforces\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\codeforce\\cf#878\\A.cpp","group":"local","local":true}

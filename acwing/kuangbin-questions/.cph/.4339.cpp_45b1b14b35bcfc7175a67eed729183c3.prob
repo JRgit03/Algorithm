@@ -1,0 +1,1 @@
+{"name":"Local: 4339","url":"e:\\Algorithm\\acwing\\kuangbin-questions\\4339.cpp","tests":[{"id":1680779977188,"input":"1\n10\n1 2 3 4 5 6 7 8 9 10\nAdd 3 6\nSub 10 2\nAdd 6 3\nQuery 3 10\nEnd","output":"Case 1:\n6\n33\n59"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\acwing\\kuangbin-questions\\4339.cpp","group":"local","local":true}
