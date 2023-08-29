@@ -1,0 +1,1 @@
+{"name":"Local: 【裴蜀定理】ax+by=gcd(a,b)","url":"e:\\Algorithm\\algorithm-template\\算法模板\\数学\\【裴蜀定理】ax+by=gcd(a,b).cpp","tests":[{"id":1693313121876,"input":"2\n4059 -1782","output":"99"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\algorithm-template\\算法模板\\数学\\【裴蜀定理】ax+by=gcd(a,b).cpp","group":"local","local":true}
