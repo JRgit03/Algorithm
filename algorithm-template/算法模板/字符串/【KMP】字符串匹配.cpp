@@ -30,7 +30,7 @@ int main(){
             cout << i - m + 1 << "\n";
         }
     }
-    // 数组ne数组
+    // 输出ne数组
     for(int i=1;i<=m;i++) cout << ne[i] << " ";
     return 0;
 }
