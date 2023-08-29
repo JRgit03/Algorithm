@@ -1,0 +1,1 @@
+{"name":"Local: 【KMP】字符串匹配","url":"e:\\Algorithm\\algorithm-template\\算法模板\\字符串\\【KMP】字符串匹配.cpp","tests":[{"id":1693289798344,"input":"ABABABC\nABA","output":"1\n3\n0 0 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\algorithm-template\\算法模板\\字符串\\【KMP】字符串匹配.cpp","group":"local","local":true}
