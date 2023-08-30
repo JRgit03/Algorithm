@@ -1,0 +1,1 @@
+{"name":"Local: 【LCA】最近公共祖先","url":"e:\\Algorithm\\algorithm-template\\算法模板\\图论\\【LCA】最近公共祖先.cpp","tests":[{"id":1693393749545,"input":"5 5 4\n3 1\n2 4\n5 1\n1 4\n2 4\n3 2\n3 5\n1 2\n4 5","output":"4\n4\n1\n4\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Algorithm\\algorithm-template\\算法模板\\图论\\【LCA】最近公共祖先.cpp","group":"local","local":true}
