@@ -7,9 +7,4 @@ void solve(){
     
 }
 
-int main(){
-    IOS;
-    int t;cin>>t;
-    while(t--)solve();
-    return 0;
-}
+int main(){IOS;solve();return 0;}
