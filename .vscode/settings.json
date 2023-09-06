@@ -1,4 +1,9 @@
 {
+
+    "code-runner.executorMap":{
+        "cpp":"chcp 65001 "
+        },
+
     "files.associations": {
         "*.html": "html",
         "iostream": "cpp",
