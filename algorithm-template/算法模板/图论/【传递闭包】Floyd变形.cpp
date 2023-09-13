@@ -36,7 +36,7 @@ void solve2(){
         }
     for(int i=1;i<=n;i++) // g[i]先不变
         for(int j=1;j<=n;j++)  
-            if(g[j][i]) // j 与 i 连通 则 j 可以到达 i 的 所有地方
+            if(g[j][i]) // j 与 i 连通 则 j 可以到达 i 可以到达 的 所有地方
                 g[j] |= g[i];            
     for(int i=1;i<=n;i++)
         for(int j=1;j<=n;j++)
