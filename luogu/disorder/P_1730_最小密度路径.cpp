@@ -26,9 +26,9 @@ void solve(){
      * 这就要求我们按照一定的顺序解决子问题，以保证每个子问题的依赖关系能够得到满足
      */
 	for(int m1=2;m1<=m;m1++) //m1 从小 到 大
-	    for(int i=1;i<=n;i++)
-	        for(int j=1;j<=n;j++)
-	            for(int k=1;k<=n;k++)
+        for(int k=1;k<=n;k++)
+            for(int i=1;i<=n;i++)
+                for(int j=1;j<=n;j++)
                     dist[i][j][m1] = min(dist[i][j][m1], dist[i][k][m1-1] + dist[k][j][1]);
 
     for(int i=1;i<=n;i++)
