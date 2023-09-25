@@ -95,7 +95,4 @@
     },
     "C_Cpp.errorSquiggles": "disabled",
     "cph.general.onceMaintainerMessage": false
-	"editor.quickSuggestions": false,
-	"editor.wordBasedSuggestions": false,
-	"editor.snippetSuggestions": "none"
 }
