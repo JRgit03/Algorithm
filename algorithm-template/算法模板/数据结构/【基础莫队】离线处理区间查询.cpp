@@ -14,7 +14,7 @@ int a[N];
 // 分块部分 block代表每块大小 pos[i]代表位置i的块编号
 int block,pos[N];
 struct Q{
-    int l,r,k;
+    int l,r,k; // 基础莫队算法 左右端点[L,R] 对应平面上点(x,y)
     bool operator < (const Q & t) const {
         if(pos[l] != pos[t.l]) return pos[l] < pos[t.l]; // 左端点所在块
         return r < t.r; // 右端点
