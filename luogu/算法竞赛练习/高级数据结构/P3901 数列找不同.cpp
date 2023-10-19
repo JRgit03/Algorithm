@@ -43,9 +43,9 @@ int main(){
     sort(q,q+m);
     int l=1,r=0; 
     for(int i=0;i<m;i++){
-        while(l < q[i].l) sub(l++);
         while(l > q[i].l) add(--l);
         while(r < q[i].r) add(++r);
+        while(l < q[i].l) sub(l++);
         while(r > q[i].r) sub(r--);
         ans[q[i].k] = (now == (q[i].r - q[i].l + 1));
     }
