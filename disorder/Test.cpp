@@ -1,16 +1,20 @@
 #include <bits/stdc++.h>
 #define IOS ios::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);
+// #define ONLINE_JUDGE  
 using namespace std;
 typedef long long ll;
 
-map<int,int> dp;
-
 void solve(){
-        
+    
 }
 
 int main(){
+    #ifndef ONLINE_JUDGE
+        freopen("E:/in.txt","r",stdin);
+        freopen("E:/out.txt","w",stdout);
+    #endif
     IOS;
-    cout << (1LL << 50) << "\n";
+    int a,b;
+    while(cin>>a>>b) cout<<a+b<<"\n";
     return 0;
 }
