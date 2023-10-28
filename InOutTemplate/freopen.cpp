@@ -7,6 +7,7 @@
 #define ONLINE_JUDGE  
 using namespace std;
 const int N = 1e5 + 10, Mod = 1e9 + 7, INF = 0x3f3f3f3f;
+const double PI = acos(-1.0);
 typedef pair<int,int> PII;
 typedef long long ll;
 
