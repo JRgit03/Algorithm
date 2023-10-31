@@ -26,9 +26,35 @@ void calc_sa(){
         for(int i=0;i<n;i++)
             tmp[sa[i+1]] = tmp[sa[i]] + (comp_sa(sa[i],sa[i+1]) ? 1 : 0);
         for(int i=0;i<n;i++) rk[i] = tmp[i];
-        //for(int i=0;i<n;i++) cout << rk[i] << " "; cout << "\n";
     }
 }
+
+int cnt[N],t1[N],t2[N];
+
+void calc_sa2(){
+    int m = 127;
+    int i,*x = t1, *y = t2;
+    for(int i=0;i<m;i++) cnt[i] = 0;
+    for(int i=0;i<n;i++) cnt[x[i] = s[i]]++;
+    for(int i=0;i<m;i++) cnt[i] += cnt[i-1];
+    for(int i=n-1;i>=0;i--) sa[--cnt[x[i]]] = i;
+    for(int k=1;k<=n;k=k*2){
+        int p = 0;
+        for(int i=n-k;i<n;i++) y[p++] = i;
+        for(int i=0;i<n;i++) if(sa[i] >= k) y[p++] = sa[i] - k;
+        for(int i=0;i<m;i++) cnt[i] = 0;
+        for(int i=0;i<n;i++) cnt[x[y[i]]]++;
+        for(int i=0;i<m;i++) cnt[i] += cnt[i-1];
+        for(int i=n-1;i>=0;i--) sa[--cnt[x[y[i]]]] = y[i];
+        swap(x,y);
+        p = 1; x[sa[0]] = 0;
+        for(int i=1;i<n;i++) 
+            x[sa[i]] = y[sa[i-1]] == y[sa[i]] && y[sa[i-1] + k] == y[sa[i] + k] ? p-1 : p++;
+        if(p>=n) break;
+        m = p;
+    }
+}  
+
 
 void getheight(int n){
     int i,j,k=0;
@@ -42,14 +68,11 @@ void getheight(int n){
 }
 
 int main(){
-    scanf("%s",s); m = strlen(s);
-    s[m] = '$'; scanf("%s",s+m+1); n = strlen(s);
-    calc_sa();
+    scanf("%s",s); n = strlen(s);
+    // calc_sa();
+    calc_sa2();
     getheight(n);
-    int ans = 0;
-    for(int i=1;i<n;i++)
-        if((sa[i-1] < m && sa[i] > m) || (sa[i] < m && sa[i-1] > m))
-            ans = max(ans,height[i]);
-    cout << ans << "\n";
+    for(int i=0;i<n;i++) cout << sa[i] << " "; cout << "\n";
+    for(int i=0;i<n;i++) cout << height[i] << " "; cout << "\n";
     return 0;
 }
