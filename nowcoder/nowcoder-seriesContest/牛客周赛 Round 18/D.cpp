@@ -7,6 +7,7 @@ int ans;
 int a[maxn],b[maxn];
 // dp[i,j,k] 前i件物品体积不超过j且状态为k的最大价值
 int dp[maxn][maxn][3]; // 0 半价 1 原价 2不买
+
 signed main(){
 	cin>>n>>m;
 	for(int i=1;i<=n;i++) cin>>a[i];
