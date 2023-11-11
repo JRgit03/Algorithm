@@ -1,3 +1,7 @@
+/**
+ * 树链剖分，计算机术语，指一种对树进行划分的算法，它先通过轻重边剖分将树分为多条链，
+ * 保证每个点属于且只属于一条链，然后再通过数据结构（树状数组、SBT、SPLAY、线段树等）来维护每一条链
+*/
 #include <bits/stdc++.h>
 using namespace std;
 const int maxn = 1e5 + 10;
