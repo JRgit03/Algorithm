@@ -1,4 +1,5 @@
 /**
+ * 给定一棵有 n 个点的树，询问树上距离为 k 的点对是否存在
  * https://www.luogu.com.cn/problem/P3806
  * 每个点最多被分治logn次 时间复杂度为nlogn 
  */
@@ -63,7 +64,7 @@ void calc(int u){
             que.push(tmp[j]);
             judge[tmp[j]] = true;
         }
-    }t
+    }
     while(que.size()){ // 清空judge数组 不能使用memse 使用memset时间复杂度上升 为下一次分治使用
         judge[que.front()] = false; 
         que.pop();
