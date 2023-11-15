@@ -1,6 +1,13 @@
 # Algorithm
- 
-### Believe in yourself and all that you are capable of. ^.^
+
+<div>
+    <h1>
+        Believe in yourself and all that you are capable of. ^.^
+    </h1>
+    <image src="./preview.jpg" weight=100%>
+</div>
+
+### 
 
 ### 背包问题推荐文章
 
