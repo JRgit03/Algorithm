@@ -1,9 +1,9 @@
 # Algorithm
 
 <div>
-    <h1>
+    <h3>
         Believe in yourself and all that you are capable of. ^.^
-    </h1>
+    </h3>
     <image src="./preview.jpg" weight=100%>
 </div>
 
