@@ -17,7 +17,7 @@ int main(){
     }else if(check(n) && check(n+6)){
         cout << "Yes" << "\n" << n + 6 << "\n";
     }else{
-        // 结论二： 两个相邻的质数不会相差很远 => 下一个性感素数不会相差很远
+        // 结论二： 众所周知两个相邻的质数不会相差很远 => 下一个性感素数不会相差很远
         while(++n){
             if((check(n) && check(n-6)) || (check(n) && check(n+6))){
                 cout << "No" << "\n" << n << "\n";
