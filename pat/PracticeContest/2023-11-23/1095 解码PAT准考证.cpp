@@ -8,6 +8,9 @@ map<string,vector<pair<string,int>>> m1; // {pat级别,[{准考证号,成绩},..
 map<string,pair<int,int>> m2; // {考场号,[人数,总分]}
 map<string,map<string,int>> m3;// {日期, {考场,人数}} 
 
+// 可以把 map 看出一维数组 map[k] = v
+// mp[rq][kc] += 1;
+
 int main(){
     cin>>n>>m;
     for(int i=0;i<n;i++){

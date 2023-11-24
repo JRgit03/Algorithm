@@ -9,10 +9,12 @@ bool check(int x){ // O(sqrt(n))
     return true;
 }
 
+// 
+
 int main(){
     int n,k; cin>>n>>k;
     string s; cin>>s;
-    for(int i=0;i+k-1<n;i++){ // O(n * sqrt(x))
+    for(int i=0;i+k-1<n;i++){ // O(n * sqrt(x)) 1000 * sqrt(999-999-999) => 1e7 
         string str = s.substr(i,k);
         int x = stoi(str);
         if(check(x)){

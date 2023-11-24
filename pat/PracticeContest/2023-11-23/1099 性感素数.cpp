@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// p-6 p p+6
+
+// 12: 1 12 -- 2 6 3 4
+
 // 结论一： 一个数x为合数 则 必定在 2~sqrt(x) 存在合数因子
 bool check(int x){ // O(sqrt(n))
     if(x < 2) return false;
