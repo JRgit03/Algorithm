@@ -1,25 +1,24 @@
 #include <bits/stdc++.h>
-#define IOS ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
+#define IOS ios::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);
+#define dbug(x) cout << #x << '=' << x << endl
+#define int long long
 #define x first
 #define y second
-#define pb push_back
-#define endl "\n"
-#define dbug(x) cout << #x << '=' << x << endl
 using namespace std;
-typedef long long ll;
+const int N = 1e5 + 10, Mod = 1e9 + 7, INF = 0x3f3f3f3f;
+const double PI = acos(-1.0);
 typedef pair<int,int> PII;
-typedef tuple<int,int,int> TIII;
-const int N = 1e5 + 10 , mod = 1e9 + 7 , INF = 0x3f3f3f3f;
+typedef long long ll;
 
 void solve(){
-	
+    
 }
 
-int main(){
-	IOS;
-	int t;cin>>t;
-	while(t--)solve();
+signed main(){
+    IOS;
+    int T=1;
+    cin>>T;
+    while(T--)
+        solve();
+    return 0;
 }
-
-
-
