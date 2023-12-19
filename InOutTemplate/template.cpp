@@ -1,9 +1,13 @@
 #include <bits/stdc++.h>
 #define IOS ios::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);
 #define dbug(x) cout << #x << '=' << x << endl
+#define debug_(x) cerr << #x << " = " << (x) << ' '
+#define debug(x) cerr << #x << " = " << (x) << '\n'
+#define debugsq(x) cerr << #x << ": ["; for (auto i : x) cerr << i << ' '; cerr << "]\n";
+#define debugmp(x) cerr << #x << ": [ "; for (auto [i, j] : x) cerr << '[' << i << "," << j << "] "; cerr << "]\n";
 #define int long long
-#define x first
-#define y second
+#define fi first
+#define se second
 using namespace std;
 const int N = 1e5 + 10, Mod = 1e9 + 7, INF = 0x3f3f3f3f;
 const double PI = acos(-1.0);
