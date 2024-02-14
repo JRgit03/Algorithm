@@ -16,11 +16,25 @@ const double eps = 1e-8;
 typedef pair<int,int> PII;
 typedef long long ll;
 
-int min(int a, int b) { return a < b ? a : b; }
-int max(int a, int b) { return a > b ? a : b; }
+int max(int a,int b){
+    return a >= b ? a : b;
+}
 
 void solve(){
-    
+    int n; cin>>n;
+    vector<int> a(n); for(auto &x : a) cin>>x;
+    if(n == 1){
+        cout << 0 << "\n";
+        return;
+    }
+    int l = 0, r = n - 1;
+    while(l < n && a[l] == a[0]) l++;
+    while(r >= 0 && a[r] == a[n-1]) r--;
+    if(a[0] == a[n-1]){
+        cout << max(0 ,r - l + 1) << "\n";
+    }else{
+        cout << min(max(0 ,n - l), max(0, r + 1)) << "\n";
+    }
 }
 
 signed main(){

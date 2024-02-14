@@ -16,11 +16,33 @@ const double eps = 1e-8;
 typedef pair<int,int> PII;
 typedef long long ll;
 
-int min(int a, int b) { return a < b ? a : b; }
-int max(int a, int b) { return a > b ? a : b; }
-
+// 假设参赛者符合 a->b->c->d->e 如果方案合法则最终一定能以某种顺序访问完所有的点 => topsort
 void solve(){
-    
+    int n,k; cin>>n>>k;
+    vector<int> d(n);
+    vector<int> g[n];
+    while(k--){
+        vector<int> a(n); for(auto &x : a) cin>>x;
+        for(int i=1;i<n-1;i++) {
+            int u = a[i] - 1, v = a[i+1] - 1;
+            g[u].push_back(v);
+            d[v] += 1;
+        }
+    }
+    auto topsort = [&](){
+        queue<int> q;
+        for(int i=0;i<n;i++) if(!d[i]) q.push(i);
+        int m = q.size(); while(q.size()){
+            int u = q.front(); q.pop();
+            for(auto &v : g[u])
+                if(--d[v] == 0){
+                    q.push(v);
+                    m += 1;
+                }
+        }
+        return m == n;
+    }; 
+    cout << (topsort() ? "YES" : "NO") << "\n";
 }
 
 signed main(){

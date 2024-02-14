@@ -16,15 +16,32 @@ const double eps = 1e-8;
 typedef pair<int,int> PII;
 typedef long long ll;
 
-int min(int a, int b) { return a < b ? a : b; }
-int max(int a, int b) { return a > b ? a : b; }
+map<int,vector<string>> mp;
+
+void init(){
+    string s = "";
+    for(char c1 = 'a'; c1 <= 'z'; c1++){
+        for(char c2 = 'a'; c2 <= 'z'; c2++){
+            for(char c3 = 'a'; c3 <= 'z'; c3++){
+                s = ""; s += c1; s += c2; s += c3;
+                int x = c1 - 'a' + c2 - 'a' + c3 - 'a' + 3;
+                mp[x].push_back(s);
+            }
+        }
+    }
+    for(auto &[_,v] : mp) sort(v.begin(), v.end(), [&](auto &p, auto &q){
+        return p < q;
+    });
+}
 
 void solve(){
-    
+    int x; cin>>x;
+    cout << mp[x][0] << "\n";
 }
 
 signed main(){
     IOS;
+    init();
     int T=1;
     cin>>T;
     while(T--)

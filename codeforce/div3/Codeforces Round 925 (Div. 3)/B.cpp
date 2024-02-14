@@ -16,11 +16,19 @@ const double eps = 1e-8;
 typedef pair<int,int> PII;
 typedef long long ll;
 
-int min(int a, int b) { return a < b ? a : b; }
-int max(int a, int b) { return a > b ? a : b; }
-
 void solve(){
-    
+    int n; cin>>n;
+    vector<int> a(n); for(auto &x : a) cin>>x;
+    int s = 0, tar = accumulate(a.begin(), a.end(), 0LL) / n;
+    for(int i=0;i<n;i++){
+        s += a[i] - tar;
+        if(s < 0) {
+            cout << "NO" << "\n";
+            return;
+        }
+    }
+    cout << "YES" << "\n";
+    return;
 }
 
 signed main(){
