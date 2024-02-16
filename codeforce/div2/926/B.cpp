@@ -24,7 +24,9 @@ void init(){
 }
 
 void solve(){
-    
+    int n,k; cin>>n>>k;
+    int x = 4 * n - 2, y = 4 * n - 4; //dbug(x); dbug(y);
+    cout << ((k <= y) ? (k + 2 - 1) / 2 : y / 2 + k - y) << "\n";
 }
 
 signed main(){

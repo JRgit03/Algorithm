@@ -10,7 +10,7 @@
 #define fi first
 #define se second
 using namespace std;
-const int N = 1e5 + 10, Mod = 1e9 + 7, INF = 0x3f3f3f3f;
+const int N = 1e6 + 10, Mod = 1e9 + 7, INF = 0x3f3f3f3f;
 const double PI = acos(-1.0);
 const double eps = 1e-8;
 typedef pair<int,int> PII;
@@ -20,18 +20,22 @@ int min(int a, int b) { return a < b ? a : b; }
 int max(int a, int b) { return a > b ? a : b; }
 
 void init(){
-    
-}
 
+}
+ 
 void solve(){
-    
+    int n; cin>>n;
+    vector<int> a(n); for(auto &x : a) cin>>x;
+    int suc = 1;
+    for(int i=0;i<n;i++) suc &= (a[i] <= i+1);
+    cout << (suc ? "YES" : "NO") << "\n";
 }
 
 signed main(){
     IOS;
     init();
     int T=1;
-    cin>>T;
+    // cin>>T;
     while(T--)
         solve();
     return 0;

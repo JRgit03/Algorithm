@@ -19,17 +19,16 @@ typedef long long ll;
 int min(int a, int b) { return a < b ? a : b; }
 int max(int a, int b) { return a > b ? a : b; }
 
-void init(){
-    
-}
-
 void solve(){
-    
+    int n,x; cin>>n>>x;
+    int ans = 0;
+    for(int i=0;i<n;i++) 
+        ans += (i & 1) ? (x + 2 - 1) / 2 : x;
+    cout << ans << "\n";
 }
 
 signed main(){
     IOS;
-    init();
     int T=1;
     cin>>T;
     while(T--)

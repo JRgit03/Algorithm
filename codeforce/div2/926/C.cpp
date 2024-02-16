@@ -24,7 +24,22 @@ void init(){
 }
 
 void solve(){
-    
+    int k,x,a; cin>>k>>x>>a;
+    int pre = 1, cur = 1; // cur 当前赌注 pre前面已经输掉的赌注
+    for(int i=1;i<=x;i++,pre += cur){ // i 已经输的场数
+        if(a < cur + pre) {
+            cout << "NO" << "\n";
+            return;
+        }
+        if(k * cur > pre + cur) continue; 
+        cur = (pre + 1 + k - 2) / (k - 1);
+        if(a < cur + pre) {
+            cout << "NO" << "\n";
+            return;
+        }
+    }
+    cout << "YES" << "\n";
+    return;
 }
 
 signed main(){

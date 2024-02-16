@@ -10,7 +10,7 @@
 #define fi first
 #define se second
 using namespace std;
-const int N = 1e5 + 10, Mod = 1e9 + 7, INF = 0x3f3f3f3f;
+const int N = 1e6 + 10, Mod = 1e9 + 7, INF = 0x3f3f3f3f;
 const double PI = acos(-1.0);
 const double eps = 1e-8;
 typedef pair<int,int> PII;
@@ -19,12 +19,29 @@ typedef long long ll;
 int min(int a, int b) { return a < b ? a : b; }
 int max(int a, int b) { return a > b ? a : b; }
 
-void init(){
-    
-}
+int primes[N], cnt;
+int st[N];
 
+set<int> s;
+
+int f[N];
+
+void init(){
+    for(int i=2;i<=1000000;i++){
+        if(!st[i]) primes[cnt++] = i;
+        for(int j=0;primes[j] <= 1000000 / i; j++){
+            st[primes[j] * i] = 1;
+            if(i % primes[j] == 0) break;
+        } 
+    } 
+    // dbug(cnt); cnt=78498
+    for(int i=0;i<cnt;i++) s.insert(primes[i]);
+    for(int i=0;i<=1000000;i++) f[i] = f[i-1] + (s.count(i - 2) && s.count(i));
+}
+ 
 void solve(){
-    
+    int n; cin>>n;
+    cout << f[n] << "\n";
 }
 
 signed main(){
