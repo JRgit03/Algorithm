@@ -22,7 +22,15 @@ void init(){
 }
 
 void solve(){
-    
+    int n; cin>>n;
+    vector<int> a(n); 
+    for(int i=0;i<n;i++) cin>>a[i];
+    int x = 1;
+    for(int i=0;i<n;i++){
+        x = (a[i] + x - 1) / a[i] * a[i];
+        x += 1;
+    } 
+    cout << x - 1 << "\n";
 }
 
 signed main(){

@@ -21,8 +21,17 @@ void init(){
     
 }
 
+
 void solve(){
-    
+    int n; cin>>n;
+    int l = 1, r = n;
+    while(l < r){
+        cout << l << " " << r << " ";
+        l += 1; r -= 1;
+    }
+    if(l == r) cout << r << " "; 
+    cout << "\n";
+
 }
 
 signed main(){

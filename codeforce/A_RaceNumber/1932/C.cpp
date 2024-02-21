@@ -22,7 +22,23 @@ void init(){
 }
 
 void solve(){
-    
+    int n,m; cin>>n>>m;
+    vector<int> a(n); for(int i=0;i<n;i++) cin>>a[i];
+    string s; cin>>s; 
+    vector<int> ans, vec;
+    int l = 0, r = n - 1;
+    for(auto c : s) {
+        if(c == 'L') vec.push_back(a[l++]);
+        else vec.push_back(a[r--]);
+    }
+    reverse(vec.begin(), vec.end());
+    int v = 1;
+    for(auto x : vec) {
+        v = v * x % m;
+        ans.push_back(v);
+    }
+    reverse(ans.begin(), ans.end());
+    for(auto x : ans) cout << x << " "; cout << "\n";
 }
 
 signed main(){

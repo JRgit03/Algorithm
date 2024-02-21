@@ -22,7 +22,18 @@ void init(){
 }
 
 void solve(){
-    
+    int n; cin>>n;
+    priority_queue<int,vector<int>,greater<int> > heap;
+    for(int i=0;i<2*n;i++) {
+        int x; cin>>x;
+        heap.push(x);
+    }
+    int ans = 0;
+    while(heap.size()){
+        auto a = heap.top(); heap.pop(); heap.pop();
+        ans += a;
+    }
+    cout << ans << "\n";
 }
 
 signed main(){
