@@ -17,17 +17,12 @@ typedef long long ll;
 int min(int a, int b) { return a < b ? a : b; }
 int max(int a, int b) { return a > b ? a : b; }
 
-void init(){
-    
-}
-
 void solve(){
     
 }
 
 signed main(){
     IOS;
-    init();
     int T=1;
     cin>>T;
     while(T--)
