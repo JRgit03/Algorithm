@@ -2,6 +2,10 @@
  * https://www.luogu.com.cn/problem/P3379
  */
 
+/**
+ * 注意depth为深度数组 即权值为1的特殊情况
+ * 区分dist 和 depth的区别 ！！！
+ */
 #include <bits/stdc++.h>
 #define IOS ios::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);
 using namespace std;
