@@ -9,14 +9,22 @@ int min(int a,int b) { return (a < b ? a : b);}
 const int N = 1e6 + 10;
 
 void solve(){
-    
+    int n; cin>>n; n /= 1000;
+    int ds = 24 * 60 * 60;
+    n %= ds;
+    int h = n / 3600, m = n % 3600 / 60, s = n % 60;
+    printf("%02d:%02d:%02d\n", h, m ,s); 
 }
 
 signed main(){
-    IOS; solve();
+    solve();
     return 0;
 }
 
+/*
+46800999
+13:00:00
 
-// score 76/150 
-// https://www.lanqiao.cn/paper/3829/result/ 
+1618708103123
+01:08:23
+*/

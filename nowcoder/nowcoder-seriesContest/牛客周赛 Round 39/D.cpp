@@ -2,30 +2,29 @@
 #define int long long
 using namespace std;
 const int N = 2e3 + 10;
-int n,p;
+int n,m;
 int a[N];
-int dp[N][N];
+int dp[N];
 
 void solve(){
-    memset(dp, 0x3f, sizeof dp);
-    cin>>n>>p; 
+    cin>>n>>m; 
+    queue<int> q;
     for(int i=1;i<=n;i++) {
         cin>>a[i];
-        a[i] %= p;
+        a[i] %= m;
+        if(dp[a[i]] == 0) q.push(a[i]);
+        dp[a[i]] = 1;
     }
-    dp[0][0] = 0;
-    for(int i=1;i<=n;i++){
-        vector<array<int,2>> vec;
-        for(int j=0;j<=p;j++){
-            dp[i][j] = dp[i-1][j];
-            vec.push_back({j, (j-a[i]+p)%p});
+    while(q.size()){
+        int u = q.front(); q.pop();
+        for(int i=1;i<=n;i++){
+            int v = (a[i] + u) % m;
+            if(dp[v] != 0) continue;
+            dp[v] = dp[u] + 1;
+            q.push(v);
         }
-        sort(vec.begin(), vec.end(), [&](auto &p, auto &q){
-            return p[1] < q[1];
-        });
-        for(auto &[j, pre] : vec) dp[i][j] = min(dp[i][j], dp[i][pre] + 1);
     }
-    cout << dp[n][p] << "\n";
+    cout << dp[0] << "\n";
 }
 
 signed main(){
