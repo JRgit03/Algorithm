@@ -1,13 +1,17 @@
 #include <bits/stdc++.h>
 #define IOS ios::sync_with_stdio(false);cin.tie(nullptr);cout.tie(nullptr);
 #define SETPRECISION cout << fixed << setprecision(10);
-#define debug(x) cerr << #x << " = " << (x) << '\n'
-#define debugsq(x) cerr << #x << ": ["; for (auto i : x) cerr << i << ' '; cerr << "]\n";
-#define debugmp(x) cerr << #x << ": [ "; for (auto [i, j] : x) cerr << '[' << i << "," << j << "] "; cerr << "]\n";
 #define int long long
 #define fi first
 #define se second
 using namespace std;
+
+#ifdef LOCAL
+#include "../../../algorithm-template/debug.h"
+#else
+#define debug(...) 21
+#endif
+
 const int N = 1e5 + 10, mod = 1e9 + 7, INF = 0x3f3f3f3f;
 const double PI = acos(-1.0);
 const double eps = 1e-8;
