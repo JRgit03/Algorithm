@@ -20,13 +20,18 @@ int min(int a, int b) { return a < b ? a : b; }
 int max(int a, int b) { return a > b ? a : b; }
 
 void solve(){
-    
+    int a,b,c; cin>>a>>b>>c;
+    if(b <= a && b <= c){
+        cout << min(a - b, c - b) << "\n";
+    }else{
+        cout << 0 << "\n";
+    }
 }
 
 signed main(){
     IOS;
     int T=1;
-    cin>>T;
+    //cin>>T;
     while(T--)
         solve();
     return 0;

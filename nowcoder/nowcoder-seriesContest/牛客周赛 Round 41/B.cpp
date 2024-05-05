@@ -20,13 +20,25 @@ int min(int a, int b) { return a < b ? a : b; }
 int max(int a, int b) { return a > b ? a : b; }
 
 void solve(){
-    
+    int n,k; cin>>n>>k; 
+    if(k == 1 || k > n) {
+        cout << -1 << "\n";
+        return;
+    } 
+    k = n - k;
+    vector<int> a(n); for(auto &x : a) cin>>x; 
+    vector<int> ans(n);
+    for(int i=0;i<k;i++) ans[i] = a[i];
+    for(int i=k;i<n-1;i++) ans[i] = a[i+1];
+    ans[n - 1] = a[k];
+    debug(ans); 
+    for(auto &x : ans) cout << x << " "; cout << "\n";
 }
 
 signed main(){
     IOS;
     int T=1;
-    cin>>T;
+    //cin>>T;
     while(T--)
         solve();
     return 0;
